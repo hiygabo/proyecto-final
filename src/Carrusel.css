@@ -1,0 +1,36 @@
+.carrusel-margin-bottom {
+    /* margin-bottom: 3000px;  */
+}
+@media (max-width: 768px) {
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel img {
+    max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 450px; /* Controla la altura máxima en laptops */
+  }
+
+  .carousel-caption {
+    font-size: 14px; /* Texto legible en laptops */
+    padding: 10px; /* Ajusta los márgenes */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mayor legibilidad */
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    max-height: 200px; /* Altura menor en dispositivos pequeños */
+    height: auto; /* Mantiene la proporción */
+  }
+
+  .carousel-caption {
+    font-size: 12px; /* Texto más pequeño para móviles */
+    padding: 6px; /* Menos espacio para pantallas pequeñas */
+  }
+}

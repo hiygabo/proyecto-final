@@ -1,0 +1,104 @@
+.cuerpo{
+    display: grid;
+    grid-template-areas: "box1 box2";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+.cuerpo >.box1{
+    grid-area: box1;
+    background-color: salmon;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    margin-left: 300px;
+    width: 600px;
+    height: 300px;
+    background-image: url('./assets/cica.jpeg');
+}
+.cuerpo > .box1 > a{
+    text-decoration: underline;
+    color: inherit;
+    margin-top: 150px;
+    margin-left: 160px;
+    color: white;
+}
+.cuerpo > .box1 > .acne{
+    background-color: white;
+    padding: 2px;
+    width: 140px;
+    height: 30px;
+}
+.cuerpo > .box1 > h3{
+    margin-left: 70px;
+    margin-top: 100px;
+    color: white;
+    
+}
+.cuerpo > .box2{
+    grid-area: box2;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    margin-right: 295px;
+    width: 600px;
+    height: 300px;
+    background-image: url('./assets/honey.jpeg');
+}
+.cuerpo > .box2 > a{
+    text-decoration: underline;
+    color: inherit;
+    margin-top: 150px;
+    margin-left: 160px;
+}
+.cuerpo > .box2 > .honey{
+    background-color: white;
+    padding: 2px;
+    width: 220px;
+    height: 30px;
+}
+.cuerpo > .box2 > h3{
+    margin-left: 70px;
+    margin-top: 100px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .cuerpo {
+        grid-template-areas:
+            "box1"
+            "box2";
+        grid-template-columns: 1fr; /* Una columna en lugar de dos */
+        gap: 15px; /* Reduce el espacio entre cajas */
+    }
+
+    .cuerpo > .box1,
+    .cuerpo > .box2 {
+        margin: 0 auto; /* Centra las cajas horizontalmente */
+        max-width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    }
+
+    .cuerpo > .box1 > h3,
+    .cuerpo > .box2 > h3 {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .cuerpo > .box1,
+    .cuerpo > .box2 {
+        padding: 10px;
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .cuerpo > .box1 > h3,
+    .cuerpo > .box2 > h3 {
+        font-size: 16px; /* Reduce el tamaño del texto */
+    }
+
+    .cuerpo > .box1 > a,
+    .cuerpo > .box2 > a {
+        font-size: 14px; /* Texto más pequeño */
+    }
+}
