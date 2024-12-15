@@ -1,33 +1,38 @@
-.perfil{
-    width:100%;
-    height:100%;
+.perfil {
+    width: 100%;
+    height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     color: rgb(96, 96, 96);
     display: grid;
-    grid-template-areas: "elementos cuenta" ;
+    grid-template-areas: "elementos cuenta";
     grid-template-columns: auto auto;
     grid-template-rows: auto;
 }
-.perfil > .elementos{
+
+.perfil > .elementos {
     grid-area: elementos;
     margin-left: 500px;
     margin-top: 150px;
 }
-.perfil > .elementos > ul{
+
+.perfil > .elementos > ul {
     list-style-type: none;
 }
-.elementos > ul > .img{
+
+.elementos > ul > .img {
     margin: 15px;
 }
-.perfil > .elementos > li{
+
+.perfil > .elementos > li {
     margin: 10px 0;
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .elementos i {
-    margin-right: 10px; 
+    margin-right: 10px;
     margin-top: 15px;
 }
 
@@ -37,37 +42,43 @@
 .fa-map-marker-alt,
 .fa-user,
 .fa-sign-out-alt {
-    font-size: 25px; 
-    color: #000; 
+    font-size: 25px;
+    color: #000;
 }
-.cuenta > h1{
+
+.cuenta > h1 {
     margin-top: 80px;
 }
-.perfil > .cuenta{
+
+.perfil > .cuenta {
     grid-area: cuenta;
     margin-right: 200px;
 }
-.cuenta > label > input[type='text'][ id='apellido']{
+
+.cuenta > label > input[type='text'][id='apellido'] {
     margin: 15px;
     font-size: 15px;
     height: 50px;
     width: 300px;
     border: solid 1px rgb(200, 198, 198);
 }
-.cuenta > label > input[type='text'][ id='nombre']{
+
+.cuenta > label > input[type='text'][id='nombre'] {
     font-size: 15px;
     height: 50px;
     width: 300px;
     border: solid 1px rgb(200, 198, 198);
 }
-.cuenta > label > input[type='text'][ id='nom']{
+
+.cuenta > label > input[type='text'][id='nom'] {
     font-size: 15px;
     height: 50px;
     width: 615px;
     border: solid 1px rgb(200, 198, 198);
     margin-top: 15px;
 }
-.cuenta > label > input[type='text'][ id='Dirección-de-correo']{
+
+.cuenta > label > input[type='text'][id='Dirección-de-correo'] {
     font-size: 15px;
     height: 50px;
     width: 615px;
@@ -75,10 +86,7 @@
     margin-top: 30px;
 }
 
-
-
-
-.cuenta > label > input[type='text'][ id='actual']{
+.cuenta > label > input[type='text'][id='actual'] {
     font-size: 15px;
     height: 50px;
     width: 615px;
@@ -86,7 +94,7 @@
     margin-top: 30px;
 }
 
-.cuenta > label > input[type='text'][ id='nueva']{
+.cuenta > label > input[type='text'][id='nueva'] {
     font-size: 15px;
     height: 50px;
     width: 615px;
@@ -94,28 +102,31 @@
     margin-top: 30px;
 }
 
-.cuenta > label > input[type='text'][ id='confirmar']{
+.cuenta > label > input[type='text'][id='confirmar'] {
     font-size: 15px;
     height: 50px;
     width: 615px;
     border: solid 1px rgb(200, 198, 198);
     margin-top: 30px;
 }
-.cuenta > label > input[type='text'][ id='tarjeta']{
+
+.cuenta > label > input[type='text'][id='tarjeta'] {
     font-size: 15px;
     height: 50px;
     width: 615px;
     border: solid 1px rgb(200, 198, 198);
     margin-top: 30px;
 }
-.cuenta > label > input[type='text'][ id='fecha']{
+
+.cuenta > label > input[type='text'][id='fecha'] {
     font-size: 15px;
     height: 50px;
     width: 115px;
     border: solid 1px rgb(200, 198, 198);
     margin-top: 30px;
 }
-.cuenta > label > input[type='text'][ id='cvc']{
+
+.cuenta > label > input[type='text'][id='cvc'] {
     font-size: 15px;
     height: 50px;
     width: 115px;
@@ -123,51 +134,69 @@
     margin-top: 30px;
     margin-left: 150px;
 }
-.cuenta > label > input[type='text'][ id='name']{
+
+.cuenta > label > input[type='text'][id='name'] {
     font-size: 15px;
     height: 50px;
     width: 615px;
     border: solid 1px rgb(200, 198, 198);
     margin-top: 30px;
 }
-.fa-heart{
+.cuenta > label > input[type='text'][id='nom'] {
+    font-size: 15px;
+    height: 50px;
+    width: 615px;
+    border: solid 1px rgb(200, 198, 198);
+    margin-top: 15px;
+}
+.fa-heart {
     color: red;
 }
-.fa-box{
+
+.fa-box {
     color: rgb(133, 83, 37);
 }
-.fa-map-marker-alt{
+
+.fa-map-marker-alt {
     color: rgb(0, 0, 0);
 }
-.fa-download{
+
+.fa-download {
     color: rgb(0, 0, 0);
 }
-.fa-user{
+
+.fa-user {
     color: rgb(58, 60, 58);
 }
-.fa-cc-visa{
+
+.fa-cc-visa {
     margin: 15px;
     color: blue;
 }
-.fa-cc-mastercard{
+
+.fa-cc-mastercard {
     margin: 15px;
     color: rgb(0, 0, 0);
 }
-.fa-cc-paypal{
+
+.fa-cc-paypal {
     margin: 15px;
     color: royalblue;
 }
-.fa-cc-apple-pay{
+
+.fa-cc-apple-pay {
     margin: 15px;
     color: #000;
 }
-.fa-google-wallet{
+
+.fa-google-wallet {
     margin: 15px;
     color: slateblue;
 }
+
 @media (max-width: 1024px) {
     .perfil {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas medianas */
+        grid-template-columns: 1fr; 
         grid-template-areas:
             "elementos"
             "cuenta";
@@ -175,25 +204,24 @@
 
     .perfil > .elementos,
     .perfil > .cuenta {
-        margin: 0 auto;
-        text-align: center; /* Ajusta el texto al centro */
+        margin: 0;
+        font-size: 25px;
     }
 
-    .cuenta > label > input[type='text'][id='fecha']
-     {
-        width: 100%; 
-
-        /* Ocupa todo el ancho en pantallas medianas */
+    .cuenta > label > input[type='text'][id='fecha'] {
+        width: 100%; /* Ocupa todo el ancho disponible */
     }
-    .cuenta > label > input[type='text'][id='cvc']{
-        margin-right: 50px;
+
+    .cuenta > label > input[type='text'][id='cvc'] {
+        margin-right: 50px; /* Ajusta los márgenes */
     }
 }
 
+/* Media Query para pantallas de hasta 768px */
 @media (max-width: 768px) {
     .perfil {
         padding: 10px;
-        font-size: 0.9rem; /* Reduce el tamaño general */
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
     }
 
     .elementos i {
@@ -202,10 +230,100 @@
 
     .cuenta > label > input[type='text'] {
         font-size: 0.9rem;
-        height: 40px;
+        height: 40px; 
     }
+    .cuenta > label > input[type='text'][id='nombre'] {
+        font-size: 15px;
+        height: 50px;
+        width: 415px;
+        margin-left: 0px;
+    
 }
+.cuenta > label > input[type='text'][id='apellido'] {
+    font-size: 15px;
+    height: 50px;
+    width: 415px;
+    margin-left: 0px;
+    border: solid 1px rgb(200, 198, 198);
+}
+.cuenta > label > input[type='text'][id='nom'] {
+    font-size: 15px;
+    height: 50px;
+    width: 415px;
+    border: solid 1px rgb(200, 198, 198);
+    margin-top: 15px;
+}
+.cuenta > label > input[type='text'][id='Dirección-de-correo'] {
+    font-size: 15px;
+    height: 50px;
+    width: 415px;
+    border: solid 1px rgb(200, 198, 198);
+    margin-top: 15px;
+}
+.cuenta > label > input[type='text'][id='actual'] {
+    font-size: 15px;
+    height: 50px;
+    width: 415px;
+    border: solid 1px rgb(200, 198, 198);
+    margin-top: 15px;
+}
+.cuenta > label > input[type='text'][id='nueva'] {
+    font-size: 15px;
+    height: 50px;
+    width: 415px;
+    border: solid 1px rgb(200, 198, 198);
+    margin-top: 15px;
+}
+.cuenta > label > input[type='text'][id='confirmar'] {
+    font-size: 15px;
+    height: 50px;
+    width: 415px;
+    border: solid 1px rgb(200, 198, 198);
+    margin-top: 15px;
+}
+.cuenta > label > input[type='text'][id='tarjeta'] {
+    font-size: 15px;
+    height: 50px;
+    width: 415px;
+    border: solid 1px rgb(200, 198, 198);
+    margin-top: 15px;
+}
+.cuenta > label > input[type='text'][id='name'] {
+    font-size: 15px;
+    height: 50px;
+    width: 415px;
+    border: solid 1px rgb(200, 198, 198);
+    margin-top: 15px;
+}
+.cuenta > label > input[type='text'][id='cvc'] {
+    font-size: 15px;
+    height: 50px;
+    width: 115px;
+    border: solid 1px rgb(200, 198, 198);
+    margin: 0;
+    margin-left: 15px;
+}
+.cuenta > .pagos >.fa-cc-visa{
+    font-size: 45px;
+}
+.cuenta > .pagos >.fa-cc-mastercard{
+    font-size: 45px;
 
+}
+.cuenta > .pagos >.fa-cc-paypal{
+    font-size: 45px;
+
+}
+.cuenta > .pagos >.fa-cc-apple-pay{
+    font-size: 45px;
+
+}
+.cuenta > .pagos >.fa-google-wallet{
+    font-size: 45px;
+
+}
+}
+/* Media Query para pantallas de hasta 480px */
 @media (max-width: 480px) {
     .perfil {
         font-size: 0.8rem; /* Texto más pequeño */
@@ -213,7 +331,7 @@
 
     .cuenta > label > input[type='text'] {
         font-size: 0.8rem;
-        height: 35px;
+        height: 35px; /* Ajusta la altura de los campos de entrada */
     }
 
     .elementos i {

@@ -1,12 +1,13 @@
 import './Profile.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import profile from './assets/profile.png';
 function Profile(){
     return(
         <div className="perfil">
             <div className="elementos">
                 <ul>
-                    <li className='img'><img src="public/profile.png" alt="" /></li>
+                    <li className='img'><img src={profile} alt="" /></li>
                     <li>Hola Usuario</li>
                     <li><i className='fas fa-box'></i>Pedidos</li>
                     <li><i className='fas fa-heart'></i>Favoritos</li>

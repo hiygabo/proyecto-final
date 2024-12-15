@@ -1,45 +1,59 @@
-.rutinas{
+.rutinas {
     background-color: rgb(172, 245, 119);
     padding: 25px;
     border-radius: 15px;
     text-align: center;
     margin-top: 50px;
     width: 1000px;
-    margin-left: 400px;
+    margin-left: auto;
+    margin-right: auto; /* Centramos la caja */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
 }
-.textrutinas{
+
+.textrutinas {
     margin-top: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.rutinas > .chat{
+
+.rutinas > .chat {
     background-color: white;
     width: 300px;
     height: 50px;
     border-radius: 15px;
-    margin-left: 300px;
+    margin-left: auto;
+    margin-right: auto; /* Centrado en pantallas más grandes */
     margin-top: 30px;
     font-size: 25px;
 }
+
+/* Media Query: Pantallas de hasta 768px */
 @media (max-width: 768px) {
-    .rutinas{
-        width: 400px;
-        margin-left: 200px;
+    .rutinas {
+        width: 90%; /* Ajuste de tamaño en pantallas pequeñas */
+        margin-left: auto;
+        margin-right: auto;
     }
+
     .rutinas > .chat {
-        width: 300px;
-        margin-left: 15px;
+        width: 80%; /* Ajustamos el tamaño de la caja del chat */
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 20px;
         font-size: 20px;
     }
 }
 
-/* Estilos para dispositivos muy pequeños */
+/* Media Query: Pantallas de hasta 480px */
 @media (max-width: 480px) {
+    .rutinas {
+        width: 95%; /* El 95% del ancho disponible */
+        margin-top: 25px;
+    }
+
     .rutinas > .chat {
-        width: 150px;
-        margin-left: 0;
+        width: 80%; /* Caja del chat más pequeña en pantallas muy pequeñas */
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 15px;
         font-size: 18px;
     }
