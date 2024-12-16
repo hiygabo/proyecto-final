@@ -3,8 +3,7 @@ import i2 from './assets/4.png';
 import i3 from './assets/3.png';
 import i4 from './assets/10.png';
 import i5 from './assets/11.png';
-import i6 from './assets/12.png';
-import './Carrusel.css'; 
+import i6 from './assets/12.png'; 
 
 
 

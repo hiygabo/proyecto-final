@@ -63,13 +63,12 @@ p {
     margin-bottom: 30px;
 }
 
-/* Media Query: Pantallas de hasta 768px */
 @media (max-width: 768px) {
     h3 {
         text-align: center;
         margin: 15px auto;
-        font-size: 1.2rem; /* Ajuste de tamaño */
-        margin-left: 0; /* Eliminar margen izquierdo */
+        font-size: 1.2rem; 
+        margin-left: 0; 
     }
 
     .p {

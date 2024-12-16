@@ -1,6 +1,4 @@
 import './Productos.css';
-
-// Importar imágenes desde la carpeta de assets
 import c1 from './assets/c1.png';
 import c1Hover from './assets/c1-hover.png';
 import c2 from './assets/c2.jpg';
