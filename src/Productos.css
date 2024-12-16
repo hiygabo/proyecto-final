@@ -78,31 +78,34 @@ p {
             "img2"
             "img3"
             "img4";
-        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-columns: 1fr; 
     }
 
-    .image-container {
-        margin: 20px auto; /* Centrar las imágenes */
-        width: 70%; /* Ancho reducido en pantallas pequeñas */
-        height: auto; /* Ajuste automático de la altura */
+    .image-container > img {
+        height: 250px;
+        width: 350px;
+        margin-left: 0;
+        
+       
     }
 
     .image-text {
-        margin-left: 0; /* Eliminar margen para centrar */
-        text-align: center; /* Centrado del texto */
+        margin-left: 0; 
+        text-align: center; 
     }
 }
 
-/* Media Query: Pantallas de hasta 480px */
+
 @media (max-width: 480px) {
     h3 {
         font-size: 1rem;
         margin-top: 10px;
     }
 
-    .image-container {
+    .image-container > img {
         width: 90%; /* Ancho mayor para pantallas muy pequeñas */
         margin: 10px auto; /* Espacio uniforme */
+        width: 100%; /* Ancho completo */
     }
 
     .titulo-productos {

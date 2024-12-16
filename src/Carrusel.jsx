@@ -4,6 +4,7 @@ import p3 from './assets/p3.png';
 import p6 from './assets/p6.png';
 import p44 from './assets/p44.jpg';
 import p55 from './assets/p55.jpg';
+import './Carrusel.css'; 
 
 
 
